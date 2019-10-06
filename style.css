@@ -1,8 +1,12 @@
+
 .page-head-pseu{
 
     background-color: #2D89E6;
     width: 100%;
     height: 20px;
+    padding-top: 2px;
+    color: aliceblue;
+    padding-bottom: 4px
     
     }
     
