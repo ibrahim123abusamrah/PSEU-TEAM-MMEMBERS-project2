@@ -5,7 +5,7 @@
     height: 20px;
     padding-top: 2px;
     color: aliceblue;
-    padding-bottom: 4px
+    padding-bottom: 4px;
 }
 .whole-page{
     height: 100%;
@@ -16,7 +16,7 @@
 }
 .split {
     height: 100%;
-    width: 50%;
+    width: 40%;
     position: fixed;
     z-index: 1;
     top: 34px;
@@ -33,10 +33,14 @@
   }
   
   .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    top: 49%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
+    background-color: lightblue;
+    width: 239px;
+    padding: 25px;
+    border: 0.5px solid rgba(138, 138, 139, 0.822);
+    height: 341px;
+    border-radius: 4%;
+}
