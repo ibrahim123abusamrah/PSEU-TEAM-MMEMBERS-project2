@@ -2,45 +2,56 @@
 .page-head-pseu{
     background-color: #2D89E6;
     width: 100%;
-    height: 20px;
-    padding-top: 2px;
+    height: 48px;
+    padding-top: 13px;
     color: aliceblue;
-    padding-bottom: 4px;
+    text-align: center;
+    font-style: normal;
 }
 .whole-page{
     height: 100%;
     width: 100%;
     display: flex;
-    position: fixed;
-
+    position: fixed;  
 }
 .split {
     height: 100%;
-    width: 40%;
     position: fixed;
     z-index: 1;
     top: 34px;
     overflow-x: hidden;
     padding-top: 20px;
+    width: 50%;
   }
   
   .left {
-    left: -8%;
+    left: 0%;
   }
   
   .right {
-    right: 20%;
+    right: 0%;
   }
   
   .centered {
-    position: fixed;
-    top: 49%;
+  /* position: fixed;*/
+   /* top: 49%;
     left: 20%;
-    transform: translate(-50%, -50%);
-    background-color: lightblue;
+    transform: translate(-50%, -50%);*/
     width: 239px;
     padding: 25px;
-    border: 0.5px solid rgba(138, 138, 139, 0.822);
+    border: 0.5px solid rgba(213, 213, 218, 0.822);
     height: 341px;
     border-radius: 4%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.centered .text-add-new-mem{
+    text-align: center;
+       border-top-width: 0px;
+    margin-top: 0px;
+
 }
