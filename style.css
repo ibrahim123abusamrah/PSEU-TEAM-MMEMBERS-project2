@@ -34,9 +34,8 @@
 }
 
 .col-50 {
-    -ms-flex: 50%;
-    /* IE10 */
     flex: 50%;
+    position: relative;
 }
 
 .btn {
@@ -50,6 +49,8 @@
     border-radius: 0 0 27px 27px;
     cursor: pointer;
     font-size: 17px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .col-25,
@@ -150,7 +151,9 @@
     background-color: #FF4A4A;
     border-radius: 50%;
     display: inline-block;
-    position: relative;
+    position: absolute;
+    margin-top: 7%;
+    left: 0%;
 }
 
 .dot span {
@@ -160,4 +163,13 @@
     position: absolute;
     left: 16px;
     top: 7px;
+}
+
+.informprfil {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col10 {
+    margin-top: 1%;
 }
