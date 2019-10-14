@@ -23,6 +23,7 @@ function savemember() {
     console.log(memberitem)
     greatmember(memberitem);
     localStorage.setItem("all-of-members", JSON.stringify(allmember))
+    numberofitem();
 }
 
 function divelemnt(memberitem) {
@@ -55,4 +56,10 @@ function printallmember(allmember) {
         greatmember(element)
     });
 
+}
+
+function numberofitem() {
+    let numitemis = allmember.length()
+    let numitem = document.createElement("div");
+    document.getElementById("numitem").innerHTML = ` <a>66666${numitem} items </a>`
 }
