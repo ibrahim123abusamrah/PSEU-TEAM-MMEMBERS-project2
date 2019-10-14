@@ -21,37 +21,35 @@
         <!-- start area Add new member-->
         <div class="split left">
             <div class="centered">
-                <form action="">
-                    <form onsubmit="createMember(name,email,major,role,biography);">
-                        <p class="text-add-new-mem">Add new member</p>
-                        <div class="row">
-                            <div class="col-75">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-50">
-                                            <input type="text" class="input-right" placeholder="Name" required>
-                                            <input type="Email" class="input-right" placeholder="Email" required>
-                                            <select class="selectinput-right" required>
+                <p class="text-add-new-mem">Add new member</p>
+                <div class="row">
+                    <div class="col-75">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-50">
+                                    <input id="firstname1" type="text" class="input-right" placeholder="Name" required>
+                                    <input id="email1" type="Email" class="input-right" placeholder="Email" required>
+                                    <select id="major1" class="selectinput-right" required>
                                         <option value="volvo">Volvo</option>
                                         <option value="saab">Saab</option>
                                         <option value="vw">VW</option>
                                         <option value="audi" selected>Audi</option>
                                       </select >
-                                    <select class="selectinput-right" required >
+                                    <select id="role1" class="selectinput-right" required >
                                         <option value="volvo">Volvo</option>
                                         <option value="saab">Saab</option>
                                         <option value="vw">VW</option>
                                         <option value="audi" selected>Audi</option>
                                       </select>
-                                            <input type="text" required style="height: 200px" class="input-right" placeholder="Biography">
-                                        </div>
-                                    </div>
-                                    <div class="befor-btn">
-                                    </div>
+                                    <input id="biog1" type="text" required style="height: 200px" class="input-right" placeholder="Biography">
                                 </div>
-                                <input type="save" value="SAVE" required class="btn">
+                            </div>
+                            <div class="befor-btn">
                             </div>
                         </div>
+                        <input onclick="savemember()" type="button" value="SAVE" required class="btn">
+                    </div>
+                </div>
             </div>
         </div>
         <!-- end  area Add new member-->
