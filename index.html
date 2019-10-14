@@ -4,44 +4,60 @@
 <head>
     <title>PSEU</title>
     <script src="js/code.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
 
     <head>
+        <!--PSEU Team Memebers area -->
         <div class="page-head-pseu">
             <h1 style="  text-align: center ">PSEU Team Memebers</h1>
         </div>
+        <!--end the PSEU Team Memebers area -->
     </head>
-    <div class="whole-page">
+    <div>
+        <!--PSEU Team Memebers area -->
+        <!-- start area Add new member-->
         <div class="split left">
             <div class="centered">
-                <p class="text-add-new-mem">Add new member</p>
-                <div class="row">
-                    <div class="col-75">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-50">
-                                    <input type="text" class="input-right" placeholder="Name">
-                                    <input type="text" class="input-right" placeholder="Email">
-                                    <input type="text" class="input-right" placeholder="Major">
-                                    <input type="text" class="input-right" placeholder="Role">
-                                    <input type="text" class="input-right" placeholder="Biography">
+                <form action="">
+                    <form onsubmit="createMember(name,email,major,role,biography);">
+                        <p class="text-add-new-mem">Add new member</p>
+                        <div class="row">
+                            <div class="col-75">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <input type="text" class="input-right" placeholder="Name" required>
+                                            <input type="Email" class="input-right" placeholder="Email" required>
+                                            <select class="selectinput-right" required>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="vw">VW</option>
+                                        <option value="audi" selected>Audi</option>
+                                      </select >
+                                    <select class="selectinput-right" required >
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="vw">VW</option>
+                                        <option value="audi" selected>Audi</option>
+                                      </select>
+                                            <input type="text" required style="height: 200px" class="input-right" placeholder="Biography">
+                                        </div>
+                                    </div>
+                                    <div class="befor-btn">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="befor-btn">
-
+                                <input type="save" value="SAVE" required class="btn">
                             </div>
                         </div>
-                        <input type="save" value="SAVE" class="btn">
-                    </div>
-                </div>
             </div>
         </div>
+        <!-- end  area Add new member-->
+        <!-- start show and sorted  member-->
         <div class="split right">
             <div>
-
                 <div class="heaf-left-right">
                     <div class="head-right">
                         <a>Sort by</a>
@@ -72,7 +88,6 @@
                     </div>
                 </div>
                 <div class="informprfil">
-
                     <div style=" position:initial;   margin-left: 5%; margin-top: 1px;">
                         <div class="dot">
                             <span>ــ</span>
@@ -85,8 +100,6 @@
                             There are many variations of passages of Lorem Ipsum There are many variations of passages of Lorem Ipsum There are many variations of passages of Lorem Ipsum
                         </div>
                     </div>
-
-
                     <div style=" position:initial;   margin-left: 5%; margin-top: 1px;">
                         <div class="dot">
                             <span>ــ</span>
@@ -99,8 +112,6 @@
                             There are many variations of passages of Lorem Ipsum There are many variations of passages of Lorem Ipsum There are many variations of passages of Lorem Ipsum
                         </div>
                     </div>
-
-
                     <div style=" position:initial;   margin-left: 5%; margin-top: 1px;">
                         <div class="dot">
                             <span>ــ</span>
@@ -116,6 +127,7 @@
                 </div>
             </div>
         </div>
+        <!-- end show and sorted  member-->
     </div>
 </body>
 

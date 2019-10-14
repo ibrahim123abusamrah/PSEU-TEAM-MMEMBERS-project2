@@ -1,4 +1,5 @@
 .page-head-pseu {
+    //PSEU Team Memebers css
     background-color: #2D89E6;
     width: 100%;
     height: 48px;
@@ -10,14 +11,8 @@
     font-size: 10px
 }
 
-.whole-page {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-}
-
 .split {
+    //split page to two side 
     height: 100%;
     position: fixed;
     z-index: 1;
@@ -39,6 +34,7 @@
 }
 
 .btn {
+    // save iput button
     background-color: #2D89E6;
     color: white;
     padding: 14px;
@@ -86,6 +82,7 @@
 }
 
 .head-left {
+    // css for how many item 
     background-color: #2D89E6;
     color: white;
     padding: 12px;
@@ -155,15 +152,14 @@
     position: absolute;
     margin-top: 7%;
     left: 0%;
-}
-
-.dot span {
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    position: absolute;
-    left: 16px;
-    top: 7px;
+    span {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        position: absolute;
+        left: 16px;
+        top: 7px;
+    }
 }
 
 .informprfil {
